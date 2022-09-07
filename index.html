@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+
+    <!-- Bootstrap -->
+
+  <!-- CSS bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+<!-- JavaScript bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+  crossorigin="anonymous"></script>
+
+<!-- FavIcon -->
+
+<link rel="apple-touch-icon" sizes="180x180" href="FevIcons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="FevIcons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="FevIcons/favicon-16x16.png">
+<link rel="manifest" href="FevIcons/site.webmanifest">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+
+<!-- Css -->
+
+<link rel="stylesheet" href="index.css">
+
+<!-- Js -->
+
+<script src="index.js"></script>
+
+</head>
+</head>
+<body>
+    
+    <!-- NavBar -->
+
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Registration Form</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+
+
+
+
+      <!-- Registration Form -->
+
+      <div class="Form-container container-xxl">
+        <span id="registrationform">
+            <div class="form-container_row row">
+                <div class="form-container_col col-xl-2"></div>
+                <div class="form-container_col1 col-xl-8">
+
+                    <div class="form-container_col_row row mt-4">
+                    <div class="form-container_col2 col-lg-6">
+                        <label for=""><b>First Name :-</b><span class="text-danger">*</span></label>
+                        <input type="text" placeholder="FirstName" id="FirstName" required class="form-control mt-2">
+
+                        <br><br>
+
+                        <label for=""><b>Date Of Birth :-</b><span class="text-danger">*</span></label>
+                        <input type="date" placeholder="Date Of Birth" id="Dob" required class="form-control mt-2">
+
+                        <br><br>
+
+                        <label for=""><b>Gender :-</b><span class="text-danger">*</span></label> <br>
+                        <div class="form-check ms-5">
+                            <input class="form-check-input" type="radio" id="male" required name="gender" id="male">
+                            <label class="form-check-label" for="male">
+                              Male
+                            </label>
+
+                            <br>
+
+                            <input class="form-check-input" type="radio" id="female"required name="gender" id="female">
+                            <label class="form-check-label" for="female">
+                                Female
+                            </label>
+                          </div>
+
+                        <br>
+
+                       <a href="submit.html"><button class="btn mb-1 px-5 ms-2 btn-danger">Submit</button></a>
+                       <!-- <a href="submit.html"><input type="submit" class="btn btn-danger" name="" id=""></a> -->
+
+                    </div>
+
+                    <div class="form-container_col2 col-lg-6">
+                        <label for=""><b>Last Name :-</b><span class="text-danger">*</span></label>
+                        <input type="text" placeholder="LastName" id="lastname" required class="form-control mt-2">
+
+                        <br><br>
+
+                        <label for=""><b>Enter Your Email Id :-</b><span class="text-danger">*</span></label>
+                        <input type="email" placeholder="Enter Your Email Id" id="email"required class="form-control mt-2">
+
+                        <br><br>
+
+                        <label for=""><b>Enter Your Contact Details :-</b><span class="text-danger">*</span></label>
+                        <input type="tel" placeholder="Enter Your Contact Details" id="contact" required class="form-control mt-2">
+
+                        <br>
+
+                        <button class="btn btn-danger mb-1 px-5 ms-2" onclick="reset()">Reset</button>
+                    </div>
+                    </div>
+
+                </div>
+                <div class="form-container_col col-xl-2"></div>
+            </div>
+        </span>
+      </div>
+
+
+      <a href="submit.html"><button class="btn btn-danger">Submit</button></a>
+</body>
+</html>
